@@ -1,0 +1,67 @@
+/* Global Styles and CSS Variables */
+:root {
+    --primary: #7e22ce; /* Ungu gelap */
+    --primary-light: #f3e8ff; /* Ungu sangat terang */
+    --primary-dark: #6b21a8; /* Ungu lebih gelap */
+    --secondary: #10b981; /* Hijau terang untuk aksen */
+    --secondary-light: #d1fae5;
+    --secondary-dark: #059669;
+    --dark: #0f172a; /* Warna teks utama terang */
+    --dark-light: #1e293b; /* Warna teks sekunder terang */
+    --light: #ffffff; /* Background card terang */
+    --gray: #64748b; /* Warna teks abu-abu terang */
+    --gray-light: #f1f5f9; /* Background utama terang */
+    --gray-border: #e2e8f0; /* Border terang */
+    --success: #10b981;
+    --warning: #f59e0b;
+    --danger: #ef4444;
+    --card-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+    --card-radius: 16px;
+    --btn-radius: 12px;
+    --input-radius: 10px;
+    --transition: all 0.2s ease;
+
+    /* Dark Mode Variables */
+    --dark-mode-bg: #111827;
+    --dark-mode-card: #1f2937;
+    --dark-mode-text: #f9fafb;
+    --dark-mode-gray: #9ca3af;
+    --dark-mode-border: #374151;
+}
+
+.dark-mode {
+    --light: var(--dark-mode-card);
+    --dark: var(--dark-mode-text);
+    --dark-light: var(--dark-mode-gray);
+    --gray-light: var(--dark-mode-bg);
+    --gray-border: var(--dark-mode-border);
+    --gray: var(--dark-mode-gray);
+    background-color: var(--dark-mode-bg);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--gray-light);
+    color: var(--dark);
+    line-height: 1.6;
+    min-height: 100vh;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: stretch;
+    justify-content: stretch;
+}
+
+#app {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

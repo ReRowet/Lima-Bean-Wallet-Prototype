@@ -1,0 +1,82 @@
+/* Kolom Kanan - Info Tambahan (Sidebar) */
+.wallet-sidebar {
+    background: var(--light);
+    padding: 25px;
+    border-left: 1px solid var(--gray-border);
+}
+
+.sidebar-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--dark);
+}
+
+.sidebar-info-card {
+    background: var(--gray-light);
+    border-radius: var(--btn-radius);
+    padding: 18px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+.sidebar-info-card h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--dark);
+}
+.sidebar-info-card p {
+    margin-bottom: 5px;
+}
+.sidebar-info-card p:last-child {
+    margin-bottom: 0;
+}
+.sidebar-info-card .text-gray {
+    color: var(--gray);
+    font-size: 13px;
+}
+
+.transaction-item {
+    margin-bottom: 15px;
+    font-size: 14px;
+    padding: 15px;
+    background: var(--primary-light);
+    border-left: 4px solid var(--primary);
+    border-radius: var(--btn-radius);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.transaction-item h3 {
+    font-weight: 600;
+    color: var(--primary-dark);
+    font-size: 15px;
+}
+.transaction-item p {
+    color: var(--gray);
+    font-size: 13px;
+}
+
+.selected-emoji-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.btn-sm {
+    padding: 8px 15px;
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: var(--btn-radius);
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 13px;
+    transition: var(--transition);
+}
+.btn-sm:hover {
+    background: var(--primary-dark);
+}
+.mt-3 { margin-top: 15px; }
+.mt-2 { margin-top: 10px; }

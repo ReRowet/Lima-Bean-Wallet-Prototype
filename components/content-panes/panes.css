@@ -1,0 +1,58 @@
+.content-section {
+    display: block; /* All are block, JS will handle showing/hiding parent */
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: var(--dark);
+}
+
+.input-group { margin-bottom: 20px; }
+.input-label { display: block; font-size: 15px; margin-bottom: 8px; color: var(--dark); font-weight: 600; }
+.input-field { width: 100%; padding: 12px 15px; border: 2px solid var(--gray-border); border-radius: var(--input-radius); font-size: 15px; background: var(--light); color: var(--dark); transition: border-color 0.2s ease, box-shadow 0.2s ease; }
+.input-field:focus { outline: none; border-color: var(--primary); box-shadow: 0 0 0 3px var(--primary-light); }
+
+.submit-btn { width: 100%; padding: 15px; background: var(--primary); color: white; border: none; border-radius: var(--btn-radius); font-weight: 600; cursor: pointer; margin-top: 25px; font-size: 16px; transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease; }
+.submit-btn:hover { background: var(--primary-dark); transform: translateY(-2px); box-shadow: 0px 8px 15px rgba(126, 34, 206, 0.2); }
+.btn-success { background-color: var(--success) !important; }
+
+.coming-soon { text-align: center; padding: 50px 0; color: var(--gray); background: var(--primary-light); border-radius: var(--card-radius); margin-top: 30px; padding: 40px 20px; }
+.coming-soon h1 { font-size: 32px; margin-bottom: 15px; color: var(--primary); }
+.coming-soon p { font-size: 18px; }
+
+.qr-code { width: 220px; height: 220px; background: var(--light); border: 2px dashed var(--gray-border); border-radius: var(--card-radius); margin: 0 auto 30px; display: flex; align-items: center; justify-content: center; color: var(--gray); font-size: 120px; }
+.note-text { margin-top: 20px; font-size: 13px; color: var(--gray); text-align: center; }
+
+/* BeanEmoji Grid & Card */
+.beanemoji-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(90px, 1fr)); gap: 15px; margin-top: 15px; }
+.beanemoji-card { display: flex; flex-direction: column; align-items: center; padding: 15px 10px; border-radius: var(--btn-radius); background: var(--gray-light); cursor: pointer; transition: var(--transition); border: 2px solid transparent; }
+.beanemoji-card:hover { background: var(--primary-light); border-color: var(--primary); transform: translateY(-3px); box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.05); }
+.beanemoji-card.selected { border-color: var(--primary); background: var(--primary-light); box-shadow: 0px 0px 0px 3px var(--primary-light); }
+.beanemoji-icon { font-size: 40px; margin-bottom: 8px; }
+.beanemoji-name { font-size: 13px; font-weight: 600; color: var(--dark); text-align: center; }
+
+/* My Assets */
+.asset-list { display: flex; flex-direction: column; gap: 15px; }
+.asset-item { display: flex; align-items: center; padding: 15px; background: var(--gray-light); border-radius: var(--btn-radius); gap: 15px; transition: var(--transition); }
+.asset-item:hover { background: var(--primary-light); transform: translateY(-2px); }
+.asset-icon { font-size: 28px; color: var(--primary); }
+.asset-details { flex-grow: 1; }
+.asset-details h3 { font-size: 16px; font-weight: 600; color: var(--dark); margin-bottom: 3px; }
+.asset-details p { font-size: 13px; color: var(--gray); }
+.asset-value { font-size: 18px; font-weight: 700; color: var(--dark); }
+
+/* DApps */
+.dapp-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 15px; }
+.dapp-card { display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 20px; background: var(--gray-light); border-radius: var(--btn-radius); text-decoration: none; color: var(--dark); transition: var(--transition); }
+.dapp-card:hover { background: var(--primary-light); color: var(--primary); transform: translateY(-3px); box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.05); }
+.dapp-icon { font-size: 40px; margin-bottom: 10px; color: var(--primary); }
+.dapp-name { font-size: 14px; font-weight: 600; text-align: center; }
+
+/* Settings */
+.settings-group { margin-bottom: 30px; }
+.settings-group h3 { font-size: 18px; font-weight: 700; color: var(--dark); margin-bottom: 15px; }
+.logout-btn { background: var(--danger); margin-top: 30px; }
+.logout-btn:hover { background: #c23636; }
+.empty-state { text-align: center; padding: 30px; background: var(--gray-light); border-radius: var(--card-radius); color: var(--gray); font-style: italic; margin-top: 20px; }

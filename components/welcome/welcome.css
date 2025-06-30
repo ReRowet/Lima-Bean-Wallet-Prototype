@@ -1,0 +1,218 @@
+.main-wrapper {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+}
+
+.welcome-card {
+    background-color: var(--light);
+    border-radius: var(--card-radius);
+    box-shadow: var(--card-shadow);
+    padding: 12px;
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.icon-container {
+    position: relative;
+    width: 450px;
+    height: 582px;
+    margin: -180px auto -180px auto;
+}
+
+.gosh-icon {
+    width: 100%;
+    height: 100%;
+}
+
+.eye-overlay {
+    position: absolute;
+    width: 21px;
+    height: 28.5px;
+    border-radius: 50%;
+    background-color: white;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.eye-overlay.left {
+    top: 42%;
+    left: 38%;
+}
+
+.eye-overlay.right {
+    top: 42%;
+    right: 49%;
+}
+
+.pupil {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s ease-out;
+}
+
+.welcome-card h1 {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 15px;
+    margin-top: 0;
+    color: var(--dark);
+}
+
+.welcome-card p {
+    font-size: 16px;
+    color: var(--gray);
+    margin-bottom: 30px;
+}
+
+.btn-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.btn-primary, .btn-secondary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px 25px;
+    border-radius: var(--btn-radius);
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+}
+.btn-primary:hover {
+    background-color: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0px 8px 15px rgba(126, 34, 206, 0.2);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+}
+.btn-secondary:hover {
+    background-color: var(--primary-light);
+    transform: translateY(-2px);
+}
+
+.form-container {
+    background-color: var(--light);
+    border-radius: var(--card-radius);
+    box-shadow: var(--card-shadow);
+    padding: 40px;
+    text-align: left;
+    max-width: 500px;
+    width: 100%;
+    display: none;
+    margin-top: 20px;
+}
+.form-container.active {
+    display: block;
+}
+
+.form-container h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--dark);
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.input-group, .text-center {
+    margin-bottom: 20px;
+}
+
+.input-label {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 8px;
+    color: var(--dark);
+    font-weight: 600;
+}
+
+.input-field {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid var(--gray-border);
+    border-radius: var(--input-radius);
+    font-size: 15px;
+    background: var(--light);
+    color: var(--dark);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.input-field:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px var(--primary-light);
+}
+
+textarea.input-field {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: var(--btn-radius);
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 16px;
+    transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.submit-btn:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0px 8px 15px rgba(126, 34, 206, 0.2);
+}
+
+.text-center {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .welcome-card, .form-container {
+        padding: 15px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .welcome-card h1 {
+        font-size: 28px;
+    }
+    .welcome-card p {
+        font-size: 15px;
+    }
+    .btn-primary, .btn-secondary {
+        font-size: 16px;
+        padding: 12px 20px;
+    }
+}
